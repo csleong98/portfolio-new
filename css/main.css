@@ -1,0 +1,21 @@
+.card-section-label {
+    font-size: 1rem;
+    text-transform:uppercase;
+}
+
+.card {
+    border: none;
+}
+
+.card-img, .card-img-top {
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.company-logos {
+    height: 6rem;
+}
