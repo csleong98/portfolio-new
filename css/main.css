@@ -9,7 +9,7 @@
     text-transform:uppercase;
 }
 
-.card {
+.project-card {
     border: none;
 }
 
@@ -17,11 +17,42 @@
     border-radius: 0.5rem;
 }
 
-.card-body {
+.project-card-body {
     padding-left: 0;
     padding-right: 0;
 }
 
 .company-logos {
-    height: 6rem;
+    position: relative; 
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#introduction {
+    background-color: #EEF5FF;
+}
+
+.badge {
+    color: #363635;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #EEF5FF;
+    border-radius: 2rem;
+    margin-bottom: 8px;
+}
+
+.task-badge {
+    padding-bottom: 8px;
+}
+
+#contact {
+    background-color: #EEF5FF;
+}
+
+.contact-icon {
+    color: #3783DC;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
 }
