@@ -7,6 +7,7 @@
 .card-section-label {
     font-size: 1rem;
     text-transform:uppercase;
+    margin-bottom: 0;
 }
 
 .project-card {
@@ -70,24 +71,48 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 425px) {
+    #introduction > .row {
+        max-width: 513px;
+    }
+    
     .top-message {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    #introduction > .row {
+        max-width: 700px;
+    }
     
+    .top-message {
+        font-size: 20px;
+    }
 }
-
+/* 
 @media screen and (min-width:992px) {
+    #introduction > .row {
+        max-width: 600px;
+    }
     
-}
+    .top-message {
+        font-size: 20px;
+    }
+} */
 
 @media screen and (min-width: 1200px) {
+    #introduction > .row {
+        max-width: 1116px;
+    }
     
+    .top-message {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    
+    #introduction > .row {
+        max-width: 1024px;
+    }
 }
