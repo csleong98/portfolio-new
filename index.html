@@ -80,18 +80,58 @@
 
     <section id="grid" class="container mt-5">
         <div class="introduction-panel">
-            <div class="design-block">Design</div>
-            <div class="about-block">About</div>
-            <div class="art-block">Illustration and Art</div>
-            <div class="coding-block">Coding</div>
-            <div class="community-block">Community</div>
+            <div class="design-block introduction-panel-card">
+                <div class="top-card-text-section">
+                    <h5>Design</h5>
+                    <p>Explore my design works throughout the years</p>
+                </div>
+                <div class="top-row-card-image-section">
+                    <img src="testing-images/Design.svg" alt="">
+                </div>
+            </div>
+            <div class="about-block introduction-panel-card">
+                <div class="top-card-text-section">
+                    <h5>About</h5>
+                    <p>A little about myself outside of work besides designing :)</p>
+                </div>
+                <div class="top-row-card-image-section">
+                    <img src="testing-images/About.svg" alt="">
+                </div>
+            </div>
+            <div class="art-block introduction-panel-card">
+                <div class="bottom-row-card-image-section">
+                    <img src="testing-images/Illustration and Art.svg" alt="">
+                </div>
+                <div class="bottom-row-card-text-section">
+                    <h5>Illustration and Art</h5>
+                </div>
+            </div>
+            <div class="coding-block introduction-panel-card">
+                <div class="bottom-row-card-image-section">
+                    <img src="testing-images/Coding.svg" alt="">
+                </div>
+                <div class="bottom-row-card-text-section">
+                    <h5>Coding</h5>
+                </div>
+            </div>
+            <div class="community-block introduction-panel-card">
+                <div class="bottom-row-card-image-section">
+                    <img src="testing-images/Community.svg" alt="">
+                </div>
+                <div class="bottom-row-card-text-section">
+                    <h5>Community</h5>
+                </div>
+            </div>
         </div>
     </section>
 
     <style>
         .introduction-panel {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            background-color: aliceblue;
+            border-radius: 16px;
+            padding: 2vw;
+            grid-template-columns: repeat(6, 1fr);
             gap: 24px 24px;
             grid-template-rows: auto;
             grid-template-areas: 
@@ -99,26 +139,50 @@
             "second second second second second second";
         }
 
+        .introduction-panel-card {
+            padding: 24px;
+            border-radius: 16px;
+        }
+
         .design-block {
-            grid-column: 1/2;
             
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: first;
+
         }
 
         .about-block {
-            grid-column: 2;
+            
+            background-color:bisque;
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row: first;
         }
 
         .art-block {
-            grid-column: 1;
-            grid-area: second;
+            
+            background-color: blueviolet;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: second;
         }
 
         .coding-block {
-            grid-area: second;
+            padding: 24px;
+            background-color: aquamarine;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row: second;
         }
 
-        .community.block {
-            grid-area: second;
+        .community-block {
+            
+            background-color: coral;
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row: second;
         }
     </style>
 
