@@ -67,7 +67,37 @@
     color: #6e6e6e;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px), screen and (max-width: 320px) {
+    .introduction-panel {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 4vw;
+    }
+
+    .design-block {
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    
+    .about-block {
+        background-color:bisque;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .art-block {
+        background-color: blueviolet;
+    }
+
+    .coding-block {
+        background-color: aquamarine;
+    }
+
+    .community-block {
+        background-color: coral;
+    }
+    
     .top-message {
         font-size: 18px;
     }
@@ -103,6 +133,54 @@
     .top-message {
         font-size: 20px;
     }
+
+    .introduction-panel {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        padding: 2vw;
+        grid-template-areas: 
+        "first first first first first first"
+        "second second second second second second";
+    }
+
+    .design-block {
+        background-color: aqua;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: first;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-block {
+        background-color:bisque;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row: first;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .art-block {
+        background-color: blueviolet;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: second;
+    }
+
+    .coding-block {
+        background-color: aquamarine;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: second;
+    }
+
+    .community-block {
+        background-color: coral;
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row: second;
+    }
 }
 /* 
 @media screen and (min-width:992px) {
@@ -129,4 +207,21 @@
     #introduction > .row {
         max-width: 1024px;
     }
+}
+
+.introduction-panel {
+    display: grid;
+    background-color: aliceblue;
+    border-radius: 16px;
+    gap: 24px 24px;
+}
+
+.introduction-panel-card {
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.introduction-panel > .introduction-panel-card > .top-row-card-image-section > img,
+.introduction-panel > .introduction-panel-card > .bottom-row-card-image-section > img {
+    width: 100%;
 }
