@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
     --bs-body-font-family: 'Inter', sans-serif;
@@ -31,7 +32,16 @@
 }
 
 #introduction {
-    background-color: #EEF5FF;
+    background-color: #FFEDCB;
+}
+
+#companies-contributed-to {
+    background-color: #FFEDCB;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
 }
 
 .badge {
@@ -55,7 +65,7 @@
 } */
 
 .contact-icon {
-    color: #3783DC;
+    color: #39995A !important;
     height: 40px;
     width: 40px;
     text-decoration: none;
@@ -72,30 +82,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         padding: 4vw;
-    }
-
-    .design-block {
-        background-color: aqua;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-    }
-    
-    .about-block {
-        background-color:bisque;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-    }
-
-    .art-block {
-        background-color: blueviolet;
-    }
-
-    .coding-block {
-        background-color: aquamarine;
-    }
-
-    .community-block {
-        background-color: coral;
     }
     
     .top-message {
@@ -144,54 +130,36 @@
     }
 
     .design-block {
-        background-color: aqua;
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row: first;
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
     }
 
     .about-block {
-        background-color:bisque;
         grid-column-start: 4;
         grid-column-end: 7;
         grid-row: first;
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
     }
 
     .art-block {
-        background-color: blueviolet;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row: second;
     }
 
     .coding-block {
-        background-color: aquamarine;
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row: second;
     }
 
     .community-block {
-        background-color: coral;
         grid-column-start: 5;
         grid-column-end: 7;
         grid-row: second;
     }
 }
-/* 
-@media screen and (min-width:992px) {
-    #introduction > .row {
-        max-width: 600px;
-    }
-    
-    .top-message {
-        font-size: 20px;
-    }
-} */
 
 @media screen and (min-width: 1200px) {
     #introduction > .row {
@@ -211,7 +179,8 @@
 
 .introduction-panel {
     display: grid;
-    background-color: aliceblue;
+    background-color: #fff;
+    filter: drop-shadow(0px 2px 9px rgba(0, 0, 0, 0.15));;
     border-radius: 16px;
     gap: 24px 24px;
 }
@@ -224,4 +193,42 @@
 .introduction-panel > .introduction-panel-card > .top-row-card-image-section > img,
 .introduction-panel > .introduction-panel-card > .bottom-row-card-image-section > img {
     width: 100%;
+}
+
+.introduction-panel > a {
+    text-decoration: none;
+    color: #343434;
+;
+}
+
+.introduction-panel > a:hover {
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 6px 19px 2px rgba(214,214,214,0.76);
+    -moz-box-shadow: 0px 6px 19px 2px rgba(214,214,214,0.76);
+    box-shadow: 0px 6px 19px 2px rgba(214,214,214,0.76);
+;
+}
+
+.design-block {
+    background-color: #D7FBEB;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.about-block {
+    background-color:#C8DEFE;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.art-block {
+    background-color: #E1DAFF;
+}
+
+.coding-block {
+    background-color: #FFEDCB;
+}
+
+.community-block {
+    background-color: #FFD1DF;
 }
